@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body style="background-color: #f7ecde;">
+    <div class="all  mx-auto">
+       <div class="container">
+      <h1 class="mt-5 text-center text position-relative">Bookmarker</h1>
+        <div class="line "></div>
+       </div>
+        <div class="dotted mt-5"></div>
+     <div class="txt text-center mt-3">  <i class="fa-solid fa-bookmark"></i><span> Bookmark your favorite sites</span>  <i class="fa-solid fa-bookmark"></i></div>
+<div class="mx-auto formm">
+    <form>
+        <div class="mb-3 mt-5 ">
+          <label for="SiteName" class="form-label fw-bold" oninput="validateName()"><i class="fa-solid fa-book-bookmark "></i> Site Name</label>
+          <input type="text" class="form-control" id="SiteName" placeholder="Bookmark Name" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+          <label for="SiteURL" class="form-label fw-bold" oninput="validateURL()"><i class="fa-solid fa-link"></i> Site URL</label>
+          <input type="url" class="form-control" id="SiteURL" placeholder="Website URL">
+        </div>
+     
+        <button type="submit" class="btn btn-primary px-5 mt-2 mb-4 Submitt "  onclick="add()">Submit</button>
+      </form>
+</div>
+<div class="dotted "></div>
+<table class="table mt-4 text-center">
+    <thead>
+      <tr>
+        <th>Index</th>
+        <th>Website Name</th>
+        <th>Visit</th>
+        <th>Delete</th>
+       
+      </tr>
+    </thead>
+    <tbody id="data"></tbody>
+  </table>
+    </div>
+
+
+
+<script src="./js/index.js"></script>
+
+</body>
+</html>
